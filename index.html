@@ -11,7 +11,7 @@
 
 </head>
 
-<body class="">
+<body class="sm:max-w-2xl mx-auto">
 
 
   <div class="w-screen h-screen fixed top-0 left-0 backdrop-brightness-50 bg-white/30 z-50 hidden" id="backdrop">
@@ -56,7 +56,7 @@
 
 
 
-  <div class="flex justify-between items-center text-sm text-slate-700 p-2 border-b">
+  <div class="flex justify-between items-center text-sm text-slate-700 p-2 border-b sm:p-4">
     <img src="./m.r (3).png" class="w-12 h-12" />
 
 
@@ -76,11 +76,11 @@
 
 
 
-  <section class="font-mono px-6 py-6 text-slate-700 h-fit w-screen grid place-content-start">
+  <section class="font-mono px-6 sm:px-8 py-6 text-slate-700 h-fit w-screen grid place-content-start">
     <p class="py-8 text-slate-400 text-sm">
       Hi, my name is Mami.
     </p>
-    <p class="font-bold text-3xl font-sans">I solve problems using my programming skills.</p>
+    <p class="font-bold text-3xl sm:text-5xl font-sans sm:pr-6">I solve problems using my programming skills.</p>
     <p class="py-8 text-slate-500 font-sans">
       I am a <span class="text-emerald-400">Junior Software Developer</span>, passionate about coding, and love
       solving problems.
@@ -88,7 +88,7 @@
 
 
     <div class="flex gap-4 pb-8">
-      <button
+      <a href="./MaminiainaRavaloarison.pdf" download="mami"
         class="w-fit p-3 relative bg-slate-900 z-1 text-lg text-slate-50 flex gap-2 before:w-fit before:p-3 before:top-0.5 before:z-[-1] before:left-0.5 before:bg-emerald-400 before:absolute before:content-['...resume'] hover:before:hidden hover:bg-slate-800 ">
 
 
@@ -99,7 +99,7 @@
         </svg>
         RESUME
 
-      </button>
+    </a>
 
 
       <button class="border hover:border-slate-900 p-3 hover:scale-105 transition duration-300 ease-in-out">
@@ -113,12 +113,12 @@
 
   </section>
 
-  <section class="h-fit bg-slate-900 text-slate-50 p-6">
-    <div class="font-bold text-3xl">
+  <section class="h-fit bg-slate-900 text-slate-50 p-6 sm:p-8 sm:flex sm:flex-col sm:justify-center sm:items-center">
+    <div class="font-bold text-3xl sm:text-5xl">
       Things I have built.
     </div>
 
-    <div class="flex flex-col gap-6 py-6">
+    <div class="flex flex-col gap-6 py-6 sm:w-2/3 sm:">
 
       <div class="bg-slate-50 h-fit">
         <img src="./cardmapr-nl-s8F8yglbpjo-unsplash.jpg" />
@@ -137,10 +137,10 @@
             Source Code
           </button>
 
-          <button
+          <a href="https://replit.com/@MaminiainaRaval/Credit?v=1"
             class="border-2 border-slate-700 text-slate-700 ml-2 p-3 font-mono hover:scale-105 transition duration-300 ease-in-out">
             Live Demo
-          </button>
+        </a>
 
         </div>
 
@@ -153,7 +153,7 @@
 
         <div class="p-4">
           <p class="bg-slate-900 w-fit px-1 font-mono">Website</p>
-          <p class="text-slate-700 pt-6">A website for a non-profit organisation located in Madagascar which is focusing
+          <p class="text-slate-700 pt-6">A website for a non-profit organization located in Madagascar which is focusing
             on
             saving
             endangered species.</p>
@@ -217,12 +217,12 @@
   </section>
 
 
-  <section class="h-fit bg-slate-50 text-slate-900 p-6">
+  <section class="h-fit bg-slate-50 text-slate-900 p-6 sm:flex sm:flex-col sm:justify-center sm:items-center">
     <div class="font-bold text-3xl">
       Latest Job
     </div>
 
-    <div class="flex flex-col gap-6 py-6">
+    <div class="flex flex-col gap-6 py-6 sm:w-2/3">
 
       <div class="flex border border-slate-900 h-fit">
 
@@ -290,12 +290,12 @@
   </section>
 
 
-  <section class="h-fit bg-slate-900 text-slate-50 p-6">
+  <section class="h-fit bg-slate-900 text-slate-50 p-6 sm:flex sm:flex-col sm:justify-center sm:items-center sm:w-full">
     <div class="font-bold text-3xl">
       Get in touch.
     </div>
 
-    <form class="flex flex-col gap-8 py-8 font-mono">
+    <form class="flex flex-col gap-8 py-8 font-mono sm:w-2/3">
       <label class="flex flex-col gap-2">
         <p class="ml-2">
           Name
