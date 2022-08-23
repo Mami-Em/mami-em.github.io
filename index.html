@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="utf-8">
@@ -23,8 +23,8 @@
 
 
 
-  <div class="flex top-0 justify-between items-center text-sm text-slate-700 p-2 border-b sm:p-4 lg:w-screen lg:m-0">
-    <img src="./m.r (3).png" class="w-12 h-12" />
+  <div class="flex top-0 justify-between items-center text-sm text-slate-700 p-2 border-b sm:p-4 lg:p-0 lg:w-screen lg:m-0">
+    <img src="." class="" />
 
 
     <button class="sm:hidden border-2 border-slate-900 p-1 rounded">
@@ -35,7 +35,7 @@
       </svg>
     </button>
 
-    <div class="hidden font-mono text-md sm:block sm:flex sm:flex-rows">
+    <div class="hidden text-md sm:block sm:flex sm:flex-rows lg:text-lg font-mono">
         <p class="p-4 text-center hover:scale-105 transition duration-300 ease-in-out">
             <a href="#about">
                 About me
@@ -116,18 +116,18 @@
 
 
 
-  <section id="about" class="font-mono px-6 sm:px-8 py-6 text-slate-700 h-fit w-screen grid place-content-start">
-    <p class="py-8 text-slate-400 text-sm">
+  <section id="about" class="font-mono px-6 sm:px-8 py-6 lg:p-12 text-slate-700 h-fit w-screen grid place-content-start lg:flex lg:flex-col lg:items-center lg:justify-center">
+    <img src="./IMG_4063.jpg" class="hidden lg:block rounded-full h-auto w-48 h-48 object-cover" alt="">
+    <p class="py-8 lg:py-10 text-slate-400 lg:text-lg text-sm">
       Hi, my name is Mami.
     </p>
-    <p class="font-bold text-3xl sm:text-5xl font-sans sm:pr-6">I solve problems using my programming skills.</p>
-    <p class="py-8 text-slate-500 font-sans">
-      I am a <span class="text--400">Junior Software Developer</span>, passionate about coding, and love
-      solving problems.
+    <p class="font-bold text-3xl sm:text-5xl font-sans sm:pr-6 lg:text-6xl lg:w-4/5 lg:text-center">I solve problems using my programming skills.</p>
+    <p class="py-8 lg:py-10 text-slate-500 lg:text-2xl lg:w-1/2 lg:text-center font-sans">
+      I am a <span class="text--400">Junior Software Developer</span> and am currently enrolled for a Bachelor of Science in Computer Network and Cybersecurity, passionate about coding and programming, problem solver, love challenges, growth mindset and am extremelly curious.
     </p>
 
 
-    <div class="flex gap-4 pb-8">
+    <div class="flex gap-4 pb-8 lg:pb-10">
       <a href="./MaminiainaRavaloarison.pdf" download="mami"
         class="w-fit p-3 rounded relative bg-slate-900 z-1 text-lg text-slate-50 flex gap-2 hover:bg-slate-50 hover:border hover:border-slate-900 hover:scale-105 hover:text-slate-900 transition duration-300 ease-in-out">
 
@@ -153,14 +153,14 @@
 
   </section>
 
-  <section id="projects" class="h-fit bg-slate-900 text-slate-50 p-6 sm:p-8 sm:flex sm:flex-col sm:justify-center sm:items-center lg:w-screen lg:gap-8">
+  <section id="projects" class="h-fit bg-slate-900 text-slate-50 p-6 sm:p-8 lg:p-12 sm:flex sm:flex-col sm:justify-center sm:items-center lg:w-screen lg:gap-8">
     <div class="font-bold text-3xl sm:text-5xl">
       Things I have built.
     </div>
 
-    <div class="flex flex-col gap-6 py-6 sm:w-2/3 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:w-5/6">
+    <div class="flex flex-col gap-6 py-6 sm:w-2/3 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:w-5/6">
 
-      <div class="bg-slate-50 h-fit lg:h-auto rounded overflow-hidden">
+      <div class="bg-slate-50 h-fit lg:h-auto rounded overflow-hidden relative">
         <img src="./cardmapr-nl-s8F8yglbpjo-unsplash.jpg" />
 
         <div class="p-4">
@@ -178,7 +178,7 @@
             </p>
           </div>
 
-          <div class="my-3">
+          <div class="my-3 lg:absolute lg:bottom-0 lg:pb-4">
             <a href="https://github.com/Mami-Em/credit/tree/main"
             class="bg-slate-400 rounded border-2 border-slate-700 text-slate-700 p-3 font-mono hover:scale-105 transition duration-300 ease-in-out">
             Source Code
@@ -197,7 +197,7 @@
       <!--
         project 2
       -->
-      <div class="bg-slate-50 h-fit rounded overflow-hidden">
+      <div class="bg-slate-50 h-fit lg:h-auto rounded overflow-hidden relative">
         <img src="./hal-gatewood-weRQAu9TA-A-unsplash.jpg" />
 
         <div class="p-4">
@@ -234,15 +234,19 @@
                 </a>
             </span>
           </p>
-          <button
-            class="bg-slate-400 rounded border-2 border-slate-700 text-slate-700 p-3 font-mono hover:scale-105 transition duration-300 ease-in-out">
-            Source Code
-          </button>
 
-          <button
-            class="border-2 rounded border-slate-700 text-slate-700 ml-2 p-3 font-mono hover:scale-105 transition duration-300 ease-in-out">
-            Live Demo
-          </button>
+          <div class="lg:absolute lg:bottom-0 lg:pb-4">
+            
+              <button
+                class="bg-slate-400 rounded border-2 border-slate-700 text-slate-700 p-3 font-mono hover:scale-105 transition duration-300 ease-in-out">
+                Source Code
+              </button>
+    
+              <button
+                class="border-2 rounded border-slate-700 text-slate-700 ml-2 p-3 font-mono hover:scale-105 transition duration-300 ease-in-out">
+                Live Demo
+              </button>
+        </div>
 
         </div>
 
@@ -250,12 +254,12 @@
       <!--
       Third
     -->
-      <div class="bg-white h-fit rounded overflow-hidden">
+      <div class="bg-white h-fit lg:h-auto rounded overflow-hidden">
         <img src="./alvaro-reyes-qWwpHwip31M-unsplash.jpg" />
 
         <div class="p-4">
           <p class="bg-slate-900 w-fit px-1 font-mono">Web App</p>
-          <p class="text-slate-700 pt-6">A web app that has two types of users, first admin and then employee. It was
+          <p class="text-slate-700 pt-6 lg:h-24 lg:overflow-hidden">A web app that has two types of users, first admin and then employee. It was
             created for a company (for the sake of their privacy, content used herein has been modified but
             functionality remains the same), in order to
             help them making their report weekly faster and analyze their data much more easier.</p>
@@ -300,6 +304,7 @@
                 </a>
             </span>
           </p>
+          
           <button
             class="bg-slate-400 rounded border-2 border-slate-700 text-slate-700 p-3 font-mono hover:scale-105 transition duration-300 ease-in-out">
             Source Code
@@ -316,48 +321,47 @@
   </section>
 
 
-  <section id="jobs" class="h-fit bg-slate-50 text-slate-900 p-6 sm:flex sm:flex-col sm:justify-center sm:items-center">
-    <div class="font-bold text-3xl">
+  <section id="jobs" class="h-fit bg-slate-50 text-slate-900 p-6 lg:p-12 sm:flex sm:flex-col sm:justify-center sm:items-center lg:w-screen lg:gap-8">
+    <div class="font-bold text-3xl lg:text-5xl">
       Latest Job
     </div>
 
-    <div class="flex flex-col gap-6 py-6 sm:w-2/3">
+    <div class="flex flex-col gap-6 py-6 sm:w-2/3 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:w-5/6">
 
-      <div class="flex border border-slate-900 h-fit rounded">
+      <div class="flex border-l h-fit  lg:h-auto">
 
 
         <div class="flex-auto p-4">
           <div class="flex gap-2 font-mono">
-            <p class="bg-slate-900 text-slate-50 w-fit px-1 ">ITSA (club)</p>
+            <p class="bg-slate-900 text-slate-50 w-fit px-1 ">Monroe College</p>
             <p class="text-slate-700 ">Aprill,
               2022 - present</p>
           </div>
 
-          <p class="text-xl font-bold py-6">IT Coordinator</p>
+          <p class="text-xl font-bold py-6">IT Coordinator (ITSA Club)</p>
 
-          <p class="pb-6">Maintain all the technology aspects the
-            club has.</p>
-          <img src="./chris-montgomery-smgTvepind4-unsplash.jpg" />
+          <p class="pb-6">Maintain all the technology aspects for the clubs</p>
+          <img src="./chris-montgomery-smgTvepind4-unsplash.jpg" class="lg:h-48 lg:object-cover lg:w-full"/>
 
         </div>
 
       </div>
 
 
-      <div class="flex border border-slate-900 h-fit rounded">
+      <div class="flex border-l h-fit  lg:h-auto">
 
 
-        <div class="flex-auto p-4">
+        <div class="flex-auto p-4 lg:h-full">
           <div class="flex gap-2 font-mono">
-            <p class="bg-slate-900 text-slate-50 w-fit px-1 ">ITSA (club)</p>
+            <p class="bg-slate-900 text-slate-50 w-fit px-1 ">Monroe College</p>
             <p class="text-slate-700 ">Aprill,
               2022 - present</p>
           </div>
 
-          <p class="text-xl font-bold py-6">Volunteer Tutoring</p>
+          <p class="text-xl font-bold py-6">Volunteer Tutoring (ITSA Club)</p>
           <p class="pb-6">Tutoring Basics of programming to club members.</p>
 
-          <img src="./desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg" />
+          <img src="./desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg" class="lg:h-48 lg:object-cover lg:w-full"/>
 
         </div>
 
@@ -365,7 +369,7 @@
 
 
 
-      <div class="flex border border-slate-900 h-fit rounded">
+      <div class="flex border-l h-fit  lg:h-auto">
 
 
         <div class="flex-auto p-4 h-fit">
@@ -376,9 +380,9 @@
           </div>
 
           <p class="text-xl font-bold py-6">Resident Asistant (RA)</p>
-          <p class="pb-6">Build better community at colleges Dorm.</p>
+          <p class="pb-6">Build better community at colleges Dorm by leading students.</p>
 
-          <img src="./brooke-cagle--uHVRvDr7pg-unsplash.jpg" />
+          <img src="./brooke-cagle--uHVRvDr7pg-unsplash.jpg" class="lg:h-48 lg:object-cover lg:w-full"/>
 
         </div>
 
@@ -389,12 +393,12 @@
   </section>
 
 
-  <section id="contact" class="h-fit bg-slate-900 text-slate-50 p-6 sm:flex sm:flex-col sm:justify-center sm:items-center sm:w-full">
-    <div class="font-bold text-3xl">
+  <section id="contact" class="h-fit bg-slate-900 text-slate-50 p-6 lg:p-12 sm:flex sm:flex-col sm:justify-center sm:items-center sm:w-full lg:w-screen">
+    <div class="font-bold text-3xl lg:text-5xl">
       Get in touch.
     </div>
 
-    <form class="flex flex-col gap-8 py-8 font-mono sm:w-2/3">
+    <form class="flex flex-col gap-8 py-8 font-mono sm:w-2/3 lg:w-1/3">
       <label class="flex flex-col gap-2">
         <p class="ml-2">
           Name
